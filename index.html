@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="never" />
+    <title>2Gether ICO</title>
+    <link rel="icon" href="public/fav.png" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:100normal,100italic,300normal,300italic,400normal,400italic,500normal,500italic,700normal,700italic,900normal,900italic|Open+Sans:400normal|Lato:400normal|Oswald:400normal|Source+Sans+Pro:400normal|Open+Sans+Condensed:300normal|PT+Sans:400normal|Raleway:400normal|Droid+Sans:400normal|Roboto+Condensed:400normal|Roboto+Slab:400normal&subset=all' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+
+</head>
+<body>
+<div id="Dashboard">
+
+    <initial>
+      <h1><a href="http://www.2getherbank.com/">The First Collaborative Bank</a></h1>
+      <img id="imgHeader" src="public/2getherImg.jpg">
+      <p>More people, less banking</p>
+      <h3>ICO end: {{ timeToIcoEnd }}</h3>
+      <p>Pre-Sale: {{ timeToPreSaleEnd }}</p>
+    </initial>
+
+<div id='container'>
+
+    <ul class="blocks">
+      <li id="1" class="blocks__block"></li>
+      <li id="2" class="blocks__block"></li>
+      <li id="3" class="blocks__block"></li>
+      <li id="4" class="blocks__block"></li>
+      <li id="5" class="blocks__block"></li>
+      <li id="6" class="blocks__block"></li>
+    </ul>
+
+    <ul class="blocks-names">
+      <li class="blocks__name">ICO Details</li>
+      <li class="blocks__name">Chart1</li>
+      <li class="blocks__name">Chart2</li>
+      <li class="blocks__name">Chart3</li>
+      <li class="blocks__name">Chart4</li>
+      <li class="blocks__name">Chart5</li>
+    </ul>
+
+    <ul class="blocks-content">
+      <li class="blocks-content__content">
+        <div class="content__close"></div>
+        <h2>ICO Details</h2>
+                <p>Owner address: {{owner}}</p>
+                <p>To buy 2gGetherTokens sends funds to: {{tokenAddress}}</p>   
+                <p>1 ETH = {{rate}} 2ggetherTokens</p>
+                <p>The ICO cap is set at {{cap}} ETHER</p>
+                <p>Pre-Sale Bonus is at {{bonus}}%</p>
+                <p>The pre-sale cap is set at = {{preSaleCap}} ETHER</p>
+                <i class="blocks__content-close-light fa fa-close"></i>
+      </li>
+      <li class="blocks-content__content">
+        <h2>Chart1</h2>
+        <doughnut-chart class="chart" :data="dataChart" :options="{responsive: true, maintainAspectRatio: true}"></doughnut-chart>
+        <i class="blocks__content-close-light fa fa-close"></i>
+      </li>
+      <li class="blocks-content__content">
+        <h2>Chart2</h2>
+        <line-chart class="chart" :data="event" :options="{responsive: true, maintainAspectRatio: true}"></line-chart>
+        <i class="blocks__content-close-dark fa fa-close"></i>
+      </li>
+      <li class="blocks-content__content">
+        <h2>Chart3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus officiis voluptates et, atque animi quae hic dolorem neque magnam reprehenderit sint dolor omnis modi mollitia labore quidem aspernatur ab architecto.</p><i class="blocks__content-close-light fa fa-close"></i>
+      </li>
+      <li class="blocks-content__content">
+        <h2>Chart4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus officiis voluptates et, atque animi quae hic dolorem neque magnam reprehenderit sint dolor omnis modi mollitia labore quidem aspernatur ab architecto.</p><i class="blocks__content-close-light fa fa-close"></i>
+      </li>
+      <li class="blocks-content__content">
+        <h2>Chart5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus officiis voluptates et, atque animi quae hic dolorem neque magnam reprehenderit sint dolor omnis modi mollitia labore quidem aspernatur ab architecto.</p><i class="blocks__content-close-light fa fa-close"></i>
+      </li>
+    </ul>
+</div>
+    
+</div>
+
+<!-- Scripts -->
+<script src="node_modules/vue/dist/vue.min.js"></script>
+<script src="node_modules/moment/min/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-duration-format/1.3.0/moment-duration-format.min.js"></script>
+<script src="https://unpkg.com/vue-chartjs@2.5.7-rc3/dist/vue-chartjs.full.min.js"></script>
+<script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+<script src="node_modules/web3/dist/web3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
+<script type="text/javascript" src="public/script.js"></script>
+<script type="text/javascript" src="public/javascript.js"></script>
+
+</body>
+</html>
